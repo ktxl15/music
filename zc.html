@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jojo音乐注册</title>
+		<link rel="shortcut icon" type="image/icon" href="./img/技术服务.png"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				transition: .7s linear;
+				color: white;
+			}
+			body{
+				display: flex;
+				height: 100%;
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+				background:url(img/47f4e91d4f06a40fbb4f930bfa2bf4c7.jpeg);
+				background-size: 100%;
+			}
+			.all{
+				display: flex;
+				justify-content: space-between;
+				width: 60vw;
+				height: 50vh;
+				margin-top: 20vh;
+				border-radius: .7rem;
+				overflow: hidden;
+				position: relative;
+			}
+			.left{
+				display: flex;
+				width: 0%;
+				height: 100%;
+				overflow: hidden;
+				filter: saturate(200%);
+				position: relative;
+				right: 0;
+			}
+			.form{
+				width: 60%;
+				background-color: rgb(96, 138, 255,.7);
+			}
+			.form_h1{
+				text-align: center;
+				font-size: 2rem;
+				line-height: 6rem;
+				font-weight: 100;
+			}
+			.form input{
+				display: block;
+				margin: 0 auto;
+				height: 2rem;
+				width: 15rem;
+				text-align: center;
+				background-color: rgb(100,100,100,0);
+				outline: none;
+				margin-bottom: 3rem;
+			}
+			#username,#password,#pwa{
+				border: transparent;
+				border-bottom: 3px solid skyblue;
+				font-family: "century gothic";
+			}
+			.btn{
+				border-radius: 1rem;
+				cursor: pointer;
+			}
+			.span{
+				display: block;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			<div class="left"><img src="img/a83bf397227357ac4c833e8b7a5c4ba2.jpeg" ></div>
+		<form action="" method="post" class="form">
+			<h1 class="form_h1">注册</h1>
+			<input type="text" name="username" id="username" value=""  placeholder="请输入qq号"/>
+			<input type="password" name="password" id="password" value="" placeholder="请输入密码"/>
+			<input type="password" name="pwa" id="pwa" value="" placeholder="请再次输入密码" />
+			<input type="button" class="btn" value="点击注册"/>
+			<span class="span"></span>
+		</form>
+		</div>
+		
+	</body>
+	<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('.btn').click(function(){
+			var username = $('#username').val()
+			var password = $('#password').val()
+			if(username == '' || password == ''){
+				$('.span').html("注册失败,请填写内容").css({'color':'red'});
+				return false;
+			}
+			$.ajax({
+				url:'zc.php',
+				type:'post',
+				data:{"username":username,"password":password},
+				success:function(xml){
+					if(xml == 0){
+						$('.span').html("注册失败,用户名已存在").css({'color':'red'});
+					}else{
+						$('.span').html("注册成功").css({'color':'green'});
+						window.location.href = "login.html";
+					}
+					
+				}
+			})
+			return true;
+		})
+		$(document).ready(function(){
+			$('.left').animate({"width":"100%"})
+		})
+	</script>
+</html>

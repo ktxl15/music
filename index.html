@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>jojo音乐</title>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<link rel="shortcut icon" type="image/icon" href="./img/技术服务.png"/>
+		<style type="text/css">
+			@media (max-width:700px) and (min-width:330px) {
+				.top_w{
+					width: 20rem;
+				}
+				.top_logo{
+					height: 1.7rem;
+					width: 1.7rem;
+				}
+				.top_logo img{
+					height: 1.3rem;
+					width: 1.3rem;
+				}
+				.top_logo::after{
+					content: '';
+				}
+				.seach{
+					height: 1.3rem;
+					width: 10rem;
+				}
+				.s{
+					height: 1rem;
+				}
+				.top_ul{
+					width: 3rem;
+					display: block;
+				}
+				.top_li{
+					font-size: .5rem;
+					height: 3.5rem;
+				}
+				.top_li:nth-of-type(1){
+					display: none;
+				}
+				.top_li:nth-of-type(3){
+					display: none;
+				}
+				.all_all{
+					height: 14rem;
+				}
+				.all{
+					top: 4rem;
+				}
+				.all_left{
+					width: 4rem;
+				}
+				.left_li{
+					height: 2rem;
+				}
+				.left_p{
+					font-size: .5rem;
+				}
+				.all_ul{
+					height: 10rem;
+					display: flex;
+				}
+				.all_li{
+					height: 6rem;
+				}
+				.first{
+					top: .1rem;
+					height: 7rem;
+				}
+				.bok{
+					display: flex;
+					width: 15rem;
+					height: 10rem;
+				}
+				.bok_dan{
+					height: 4rem;
+					width: 4rem;
+				}
+				.bok_dan::after{
+					height: 0;
+				}
+				.video video{
+					height: 10rem;
+					width: 10rem;
+				}
+				.muis_h1{
+					height: 3rem;
+					font-size: 1rem;
+					display: flex;
+					align-items: center;
+				}
+				.muisc{
+					margin-top: 1rem;
+					height: 3rem;
+				}
+				.muisc_name{
+					font-size: .5rem;
+					height: 1.6rem;
+				}
+				.audio{
+					height: 1.5rem;
+				}
+				.muisc_mask{
+					height: 24rem;
+					width: 20rem;
+				}
+				.sing_text{
+					height: 10rem;
+					width: 10rem;
+				}
+				.sing_name{
+					font-size: 1.3rem;
+					height: 2rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="anim">
+			<ul class="anim_main">
+				<li class="anim_li"></li>
+				<li class="anim_li"></li>
+				<li class="anim_li"></li>
+				<li class="anim_li"></li>
+				<li class="anim_li"></li>
+				<li class="anim_li"></li>
+				<li class="anim_li"></li>
+				<li class="anim_li"></li>
+			</ul>
+		</div>
+		<div class="top">
+			<div class="top_w">
+				<div class="top_logo">
+					<img src="img/技术服务.png" >
+				</div>
+				<form action="" class="seach">
+					<input type="text" name="cha" id="cha" value="" placeholder="搜索音乐"/>
+					<button type="button" class="btn"><img src="./img/搜索.png" class="s"></button>
+				</form>
+				<ul class="top_ul">
+					<li class="top_li">下载客户端</li>
+					<li class="top_li">登录注册</li>
+					<li class="top_li">设置</li>
+				</ul>
+			</div>
+		</div>
+		<div class="all_all">
+			<div class="all_left">
+				<ul class="left_ul">
+					<li class="left_li"><p class='left_p'>发现音乐</p></li>
+					<li class="left_li"><p class='left_p'>推荐歌单</p></li>
+					<li class="left_li"><p class='left_p'>视频</p></li>
+					<li class="left_li"><p class='left_p'>私人FM</p></li>
+				</ul>
+			</div>
+		<div class="bok">
+			<div class="bok_dan"><img src="http://p4.music.126.net/-iIyU37CwUSeOaMDb7iD5g==/109951163728254731.jpg?param=200y200" ></div>
+			<div class="bok_dan"><img src="http://p4.music.126.net/OTXf2bk64F_2u7eK4oXW6A==/109951164874269926.jpg?param=200y200" ></div>
+			<div class="bok_dan"><img src="http://p4.music.126.net/RHKzeTOboI9SxXEI4fj50A==/109951164710425717.jpg?param=200y200" ></div>
+			<div class="bok_dan"><img src="http://p3.music.126.net/ntXEPZ-bShKSELGLL9jM2w==/109951165089897715.jpg?param=200y200" ></div>
+			<div class="bok_dan"><img src="http://p3.music.126.net/zurmWytZ8QVw1Tp4fPHijA==/109951165112167492.jpg?param=200y200" ></div>
+			<div class="bok_dan"><img src="http://p4.music.126.net/gzsxh-u0mN_OtdrjpbfI8w==/7842816441775262.jpg?param=200y200" ></div>
+		</div>
+		<div class="video">
+			<video src="img/9ba0194a8f12417dbff6805dee788845.mp4" controls="controls">
+				
+			</video>
+		</div>
+		<div class="all">
+			<ul class="all_ul">
+				<li class="all_li first">
+					<img src="img/9b819f39a9ae5be1c42c0c29a5d230e1.jpeg" >
+				</li>
+				<li class="all_li secound">
+					<img src="img/47f4e91d4f06a40fbb4f930bfa2bf4c7.jpeg" >
+				</li>
+				<li class="all_li center">
+					<img src="img/eren2.jpeg" >
+				</li>
+				<li class="all_li center">
+					<img src="img/eren3.jpeg" >
+				</li>
+				<li class="all_li last">
+					<img src="img/eren4.jpeg" >
+				</li>
+					<div class="btn_left btns"></div>
+					<div class="btn_right btns"></div>
+			</ul>
+		</div>
+		</div>
+		
+		<div class="all_mask">
+			<div class="muisc_mask">
+				<div class="sing_name"></div>
+				<div class="sing_text">
+					<p class="sing_p"></p>
+				</div>
+				<audio src="" class="sing_audio dio" controls loop="loop">
+					当前浏览器不支持audio
+				</audio>
+			</div>
+		</div>
+		
+		<div class="muis">
+			<div class="muis_w">
+				<h1 class="muis_h1">
+					推荐音乐
+				</h1>
+				<hr class="muis_hr">
+				
+				<div class="muisc">
+				<img src="" class="f_img">
+				<div class="name">
+					<p class="muisc_name"><span></span></p>
+				<audio controls="controls" src="" class="audio dio" loop="loop">
+					当前浏览器不支持audio
+				</audio>
+				</div>
+				
+				</div>
+				
+				
+			</div>
+		</div>
+	</body>
+	<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		setInterval(()=>{
+			$('.anim').addClass("anim_add")
+		},3000)
+	})
+	$('.left_li').each(function(i){
+	$(this).click(function(){
+		$('.left_li').eq(i).addClass('left_li_add').siblings().removeClass('left_li_add')
+		$('.left_p').eq(i).addClass('left_liP_add').siblings().removeClass('left_liP_add')
+	})
+	})
+	
+	$('.top_logo').click(function(){
+		window.location.reload()
+	})
+	$('.top_li').eq(1).click(function(){
+		window.location.href = 'login.html'
+	})
+		$('.btn_left').click(function(){
+			change(0)
+		})
+		$('.btn_right').click(function(){
+			change(1)
+		})
+		function change(dir){
+			var arrW = [],arrH = [],arrL = [] ,arrT = [],arrZ = [],arrO = [];
+			$('.all_li').each(function(i){
+				arrW[i] = $(this).css("width");
+				arrH[i] = $(this).css("height");
+				arrL[i] = $(this).css("left");
+				arrT[i] = $(this).css("top");
+				arrZ[i] = $(this).css("z-index");
+				arrO[i] = $(this).css("opacity");
+			})
+			$('.all_li').each(function(i){
+				var index;
+				if(dir == 0){
+					index = i+1
+					if(index>4){
+						index = 0
+					}
+					$(this).animate({
+						width:arrW[index],
+						height:arrH[index],
+						left:arrL[index],
+						top:arrT[index],
+						"z-index":arrZ[index],
+						opacity:arrO[index],
+					},500)
+				}else{
+					index = i-1
+					if(index<0){
+						index = 4;
+					}
+					$(this).animate({
+						width:arrW[index],
+						height:arrH[index],
+						left:arrL[index],
+						top:arrT[index],
+						"z-index":arrZ[index],
+						opacity:arrO[index],
+					},500)
+				}
+			})
+		}	
+		var cha = $('#cha').val()
+		var num =40;
+		$.ajax({
+			url:"https://api.yimian.xyz/msc/?type=playlist&id=2137987910",
+			type:'get',
+			success:function(data){
+			for(var i = 0;i<num;i++){
+				$('.muis_w').append($('.muisc').eq(i-1).clone())
+				$('.all_mask').append($('.muisc_mask').eq(i-1).clone())
+				$('.f_img').each(function(index){
+				$(this).click(function(){
+					$('.muisc_mask').eq(index).addClass('muisc_mask_add')
+					$('.sing_text').eq(index).css({"animation-play-state":"running"})
+					$('.all_mask').addClass('all_mask_add')
+					var dio = $('.sing_audio')[index]
+					dio.play()
+					for(var y = 0 ;y<num;y++){
+					 var player = $(".audio")[y];
+						player.pause();
+					}
+				})
+				$('.all_mask').click(function(){
+					$('.muisc_mask').eq(index).removeClass('muisc_mask_add')
+					$('.all_mask').eq(index).removeClass('all_mask_add')
+					$('.sing_text').eq(index).css({"animation-play-state":"paused"})
+					var dio = $('.sing_audio')[index]
+					dio.pause()
+				})
+				$('.audio button').click(function(){
+					var dio = $('.audio')[index]
+					dio.pause()
+				})
+				})
+				
+				
+				
+				$('.audio').eq(i).attr('src',data[i].url)
+				$('.f_img').eq(i).attr('src',data[i].cover)
+				$('.muisc_name span').eq(i).text(data[i].name)
+				$('.muisc_name').eq(i).css({"background":'url('+data[i].cover+')',"background-size":"100%"})
+				
+				$('.sing_name').eq(i).text(data[i].name)
+				$('.sing_text').eq(i).css({'background':'url('+data[i].cover+')',"background-repeat":'no-repeat',"background-size":"100%"})
+				$('.sing_audio').eq(i).attr('src',data[i].url);
+			   }
+			}
+		})	
+		$('.left_li').eq(0).click(function(){
+			var hei = $('.top').height()+$('.all_all').height()
+			$('html,body').animate({'scrollTop':hei})
+		})
+		$('.left_li').eq(1).click(function(){
+			$('.all').addClass('add_all')
+			$('.bok').addClass('add_bok')
+			$('.video').removeClass('add_video');
+		})
+		$('.left_li').eq(2).click(function(){
+			$('.bok').removeClass('add_bok');
+			$('.video').addClass('add_video');
+			$('.all').addClass('add_all')
+		})
+		$('.bok_dan').eq(0).click(function(){
+			$('.bok_dan_mask').addClass()
+			$.ajax({
+				
+			})
+		})
+	</script>
+</html>
